@@ -75,10 +75,33 @@ html,body{
         .nav-active{
             color: #FFF;
         }
+        .close{
+            display: none;
+            color: #FFF;
+            position: absolute;
+            top: 40px;
+            left: 13px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .close .close-on{
+            display: block;
+            font-size: 2em;
+        }
+        .close .close-off{
+            display: none;
+        }
     }
     .nav-on{
         //right: 0px;
         opacity: 1;
+        .close .close-on{
+            display: none;
+        }
+        .close .close-off{
+            display: block;
+            font-size: 1.5em;
+        }
     }
     .article{
         display: none;
@@ -143,6 +166,10 @@ html,body{
             // 00.number / text
             ul li .nl-1{
                 margin: 0 20px 0 0px;
+            }
+            .close{
+                display: block;
+                left: 20px;
             }
         }
         .nav-on{

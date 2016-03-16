@@ -36,6 +36,9 @@ function vSlider(v){
     }, function(){
         nav.removeClass('nav-on');
     })
+    nav.on('click','.close', function(){
+       nav.toggleClass('nav-on');
+    });
     
     //on keydown change slide
     $(document).keydown(function(key){
