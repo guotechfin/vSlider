@@ -1,4 +1,4 @@
-# onepageanimation
+# vSlider
 
 vSlider
 - Change slide via menu

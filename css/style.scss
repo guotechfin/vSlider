@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-body{
+html,body{
+    height: 100%;
+}
+html,body{
     font-family: 'Nunito', Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -10,31 +13,31 @@ body{
 
 /* Section 1 Vslider */
 .vslider{
-    //height of all elements
-    $height: 400px;
-    
+    //height of all elements   
     display: block;
-    height: $height;
-    position: relative;
-    margin: 30px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #ccc;
     overflow: hidden;
+    position: relative;
     nav{
         display: block;
         background: #000;
         width: 150px;
-        height: $height;
+        height: 100%;
         position: absolute;
         z-index: 3;
         right: -110px;
         opacity: 0.5;
         font-size: 0.8em;
-        transition: right 1s, opacity 1s;
-        -o-transition: right 1s, opacity 1s;
+        transition: right 0.5s, opacity 0.5s;
+        -o-transition: right 0.5s, opacity 0.5s;
         ul{
             list-style: none;
             margin: 0px;
-            padding: 20px 0 0 20px;
-            margin: 30% 0 0 0;  
+            padding:20px 0 0 20px;
+            margin: 30% 0 0 0; 
         }
         ul li{
             
@@ -67,9 +70,10 @@ body{
         opacity: 1;
     }
     .article{
+        display: none;
         width: 70%;
-        height: $height;
-        position: absolute;
+        width: 70%;
+        height: 100%;
         z-index: 2;
         display: none;
         padding: 10% 25% 5% 5%;
@@ -116,9 +120,6 @@ body{
     
     /* Section 1 Vslider */
     .vslider{
-        //height of all elements
-        $height: 400px;
-        height: $height;
         nav{
             right: -190px;
             width: 250px;
@@ -132,7 +133,6 @@ body{
             right: 0px;
         }
         .article{
-            height: $height;
             width: 78%;
             padding: 10% 17% 5% 5%;
         }
@@ -156,11 +156,8 @@ body{
     /* Section 1 Vslider */
     .vslider{
         //height of all elements
-        $height: 400px;
-        height: $height;
  
         .article{
-            height: $height;
             width: 80%;
             padding: 10% 15% 5% 5%;
         }

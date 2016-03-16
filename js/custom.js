@@ -1,6 +1,6 @@
-$(document).ready(function(){     
+function vSlider(v){
     //main class
-    var v = '.vslider';
+    var v = v;
     //nav menu class active
     var a1 ='nav-active';
     //article class active
@@ -63,6 +63,8 @@ $(document).ready(function(){
             changeClassNavArticle(currentEl, nextEl);
         }
     })
-    
-    
+}
+
+$(document).ready(function(){     
+    vSlider('.vslider');
 })
