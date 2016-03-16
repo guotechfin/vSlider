@@ -10,6 +10,17 @@ html,body{
     padding: 0px;
 }
 
+/* Animation */
+@keyframes show{
+    0% {
+        margin-top:-30px;
+        opacity: 0;
+    }
+    100% {
+        margin-top:10px;
+        opacity: 1;
+    }
+}
 
 /* Section 1 Vslider */
 .vslider{
@@ -81,17 +92,22 @@ html,body{
     }
     .article h1{
         font-size: 1.2em;
-        transition: all 1s;
+        animation: show 0.5s 0.3s both;
+        -o-animation: show 0.5s 0.3s both;
     }
     .article h3{
         font-size: 0.7em;
         color: #FFF;
         text-transform: uppercase;
+        animation: show 0.5s 0s both;
+        -o-animation: show 0.5s 0s both;
     }
     .article p{
         font-size: 0.9em;
         line-height: 1.4em;
         color: #FFF;
+        animation: show 0.5s 0.6s both;
+        -o-animation: show 0.5s 0.6s both;
     }
     .article-active{
         display: block;
