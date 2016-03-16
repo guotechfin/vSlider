@@ -28,8 +28,8 @@ body{
         right: -110px;
         opacity: 0.5;
         font-size: 0.8em;
-        transition: all 1s;
-        -o-transition: all 1s;
+        transition: right 1s, opacity 1s;
+        -o-transition: right 1s, opacity 1s;
         ul{
             list-style: none;
             margin: 0px;
@@ -127,6 +127,9 @@ body{
             ul li .nl-1{
                 margin: 0 20px 0 0px;
             }
+        }
+        .nav-on{
+            right: 0px;
         }
         .article{
             height: $height;

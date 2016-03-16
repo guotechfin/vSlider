@@ -1,5 +1,4 @@
-$(document).ready(function(){
-      
+$(document).ready(function(){     
     //main class
     var v = '.vslider';
     //nav menu class active
@@ -8,8 +7,7 @@ $(document).ready(function(){
     var a2 ='article-active';
     
     //change class menu / article
-    var changeClassNavArticle= function(currentEl, nextEl){
-        
+    var changeClassNavArticle= function(currentEl, nextEl){       
         //change class on menu
         currentEl.removeClass(a1);
         nextEl.addClass(a1);
@@ -51,8 +49,7 @@ $(document).ready(function(){
 
             if(nextEl.length == 0){
                nextEl=lastEl;
-            }
-            
+            }           
             changeClassNavArticle(currentEl, nextEl);
         }
         //key arrow down
@@ -62,8 +59,7 @@ $(document).ready(function(){
 
             if(nextEl.length == 0){
                nextEl=firstEl;
-            }
-            
+            }        
             changeClassNavArticle(currentEl, nextEl);
         }
     })

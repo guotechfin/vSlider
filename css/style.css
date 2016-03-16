@@ -3,7 +3,7 @@ body { font-family: 'Nunito', Arial, sans-serif; font-size: 14px; line-height: 1
 
 /* Section 1 Vslider */
 .vslider { display: block; height: 400px; position: relative; margin: 30px; overflow: hidden; }
-.vslider nav { display: block; background: #000; width: 150px; height: 400px; position: absolute; z-index: 3; right: -110px; opacity: 0.5; font-size: 0.8em; transition: all 1s; -o-transition: all 1s; }
+.vslider nav { display: block; background: #000; width: 150px; height: 400px; position: absolute; z-index: 3; right: -110px; opacity: 0.5; font-size: 0.8em; transition: right 1s, opacity 1s; -o-transition: right 1s, opacity 1s; }
 .vslider nav ul { list-style: none; margin: 0px; padding: 20px 0 0 20px; margin: 30% 0 0 0; }
 .vslider nav ul li .nl-1 { display: inline-block; margin: 0 20px 0 0px; margin: 0 20px 0 -8px; }
 .vslider nav ul li .n1-2 { display: inline-block; }
@@ -27,6 +27,7 @@ body { font-family: 'Nunito', Arial, sans-serif; font-size: 14px; line-height: 1
   .vslider { height: 400px; }
   .vslider nav { right: -190px; width: 250px; font-size: 1em; }
   .vslider nav ul li .nl-1 { margin: 0 20px 0 0px; }
+  .vslider .nav-on { right: 0px; }
   .vslider .article { height: 400px; width: 78%; padding: 10% 17% 5% 5%; }
   .vslider .article h1 { font-size: 1.6em; }
   .vslider .article h3 { font-size: 0.8em; }
