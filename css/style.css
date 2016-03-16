@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+body { font-family: 'Nunito', Arial, sans-serif; font-size: 14px; line-height: 18px; margin: 0px; padding: 0px; }
+
+/* Section 1 Vslider */
+.vslider { display: block; height: 400px; position: relative; margin: 30px; overflow: hidden; }
+.vslider nav { display: block; background: #000; width: 150px; height: 400px; position: absolute; z-index: 3; right: -110px; opacity: 0.5; font-size: 0.8em; transition: all 1s; -o-transition: all 1s; }
+.vslider nav ul { list-style: none; margin: 0px; padding: 20px 0 0 20px; margin: 30% 0 0 0; }
+.vslider nav ul li .nl-1 { display: inline-block; margin: 0 20px 0 0px; margin: 0 20px 0 -8px; }
+.vslider nav ul li .n1-2 { display: inline-block; }
+.vslider nav ul li a { display: block; padding: 10px 10px 10px 0px; color: grey; text-decoration: none; transition: all 0.5s; }
+.vslider nav ul li a:hover { color: #FFF; }
+.vslider nav .nav-active { color: #FFF; }
+.vslider .nav-on { opacity: 1; }
+.vslider .article { width: 70%; height: 400px; position: absolute; z-index: 2; display: none; padding: 10% 25% 5% 5%; background: #000; }
+.vslider .article h1 { font-size: 1.2em; transition: all 1s; }
+.vslider .article h3 { font-size: 0.7em; color: #FFF; text-transform: uppercase; }
+.vslider .article p { font-size: 0.9em; line-height: 1.4em; color: #FFF; }
+.vslider .article-active { display: block; }
+.vslider #article1 { background: #f26754; }
+.vslider #article2 { background: #38a9e2; }
+.vslider #article3 { background: #9837eb; }
+.vslider #article4 { background: #3bccb1; }
+
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) { /* Section 1 Vslider */
+  .vslider { height: 400px; }
+  .vslider nav { right: -190px; width: 250px; font-size: 1em; }
+  .vslider nav ul li .nl-1 { margin: 0 20px 0 0px; }
+  .vslider .article { height: 400px; width: 78%; padding: 10% 17% 5% 5%; }
+  .vslider .article h1 { font-size: 1.6em; }
+  .vslider .article h3 { font-size: 0.8em; }
+  .vslider .article p { font-size: 1em; line-height: 1.4em; } }
+/* !! Small Devices, Tablets */
+@media only screen and (min-width: 768px) { /* Section 1 Vslider */
+  .vslider { height: 400px; }
+  .vslider .article { height: 400px; width: 80%; padding: 10% 15% 5% 5%; }
+  .vslider .article h1 { font-size: 2em; }
+  .vslider .article h3 { font-size: 0.8em; }
+  .vslider .article p { font-size: 1.2em; line-height: 1.5em; } }
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+
+/*# sourceMappingURL=style.css.map */

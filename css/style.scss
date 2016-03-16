@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+body{
+    font-family: 'Nunito', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Section 1 Vslider */
+.vslider{
+    //height of all elements
+    $height: 400px;
+    
+    display: block;
+    height: $height;
+    position: relative;
+    margin: 30px;
+    overflow: hidden;
+    nav{
+        display: block;
+        background: #000;
+        width: 150px;
+        height: $height;
+        position: absolute;
+        z-index: 3;
+        right: -110px;
+        opacity: 0.5;
+        font-size: 0.8em;
+        transition: all 1s;
+        -o-transition: all 1s;
+        ul{
+            list-style: none;
+            margin: 0px;
+            padding: 20px 0 0 20px;
+            margin: 30% 0 0 0;  
+        }
+        ul li{
+            
+        }
+        // 00.number / text
+        ul li .nl-1{
+            display: inline-block;
+            margin: 0 20px 0 0px;
+            margin: 0 20px 0 -8px;
+        }
+        ul li .n1-2{
+            display: inline-block;
+        }
+        ul li a{
+            display: block;
+            padding: 10px 10px 10px 0px;
+            color: grey;
+            text-decoration: none;
+            transition: all 0.5s;
+        }
+        ul li a:hover{
+            color: #FFF;
+        }
+        .nav-active{
+            color: #FFF;
+        }
+    }
+    .nav-on{
+        //right: 0px;
+        opacity: 1;
+    }
+    .article{
+        width: 70%;
+        height: $height;
+        position: absolute;
+        z-index: 2;
+        display: none;
+        padding: 10% 25% 5% 5%;
+        background: #000;
+    }
+    .article h1{
+        font-size: 1.2em;
+        transition: all 1s;
+    }
+    .article h3{
+        font-size: 0.7em;
+        color: #FFF;
+        text-transform: uppercase;
+    }
+    .article p{
+        font-size: 0.9em;
+        line-height: 1.4em;
+        color: #FFF;
+    }
+    .article-active{
+        display: block;
+    }
+    #article1{
+        background: #f26754;
+    }
+    #article2{
+        background: #38a9e2;
+    }
+    #article3{
+        background: #9837eb;
+    }
+    #article4{
+        background: #3bccb1;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    
+    /* Section 1 Vslider */
+    .vslider{
+        //height of all elements
+        $height: 400px;
+        height: $height;
+        nav{
+            right: -190px;
+            width: 250px;
+            font-size: 1em;
+            // 00.number / text
+            ul li .nl-1{
+                margin: 0 20px 0 0px;
+            }
+        }
+        .article{
+            height: $height;
+            width: 78%;
+            padding: 10% 17% 5% 5%;
+        }
+        .article h1{
+            font-size: 1.6em;
+        }
+        .article h3{
+            font-size: 0.8em;
+        }
+        .article p{
+            font-size: 1em;
+            line-height: 1.4em;
+        }
+    }
+
+}
+
+/* !! Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    /* Section 1 Vslider */
+    .vslider{
+        //height of all elements
+        $height: 400px;
+        height: $height;
+ 
+        .article{
+            height: $height;
+            width: 80%;
+            padding: 10% 15% 5% 5%;
+        }
+        .article h1{
+            font-size: 2em;
+        }
+        .article h3{
+            font-size: 0.8em;
+        }
+        .article p{
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
