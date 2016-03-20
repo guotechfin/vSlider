@@ -19,12 +19,12 @@ function vSlider(v){
     };
     
     //when click on menu change active class
-    $('nav ul a').on('click', function(){
+    $('nav ul a').on('click', function(el, currentEl){
         //variables
-        var el = $(this);
+        el = $(this);
         //find
         //nav
-        var currentEl = $(v + ' nav ul').find('.' + a1);;
+        currentEl = $(v + ' nav ul').find('.' + a1);;
         el.addClass(a1);
         changeClassNavArticle(currentEl,el);
     });
@@ -41,14 +41,14 @@ function vSlider(v){
     });
     
     //on keydown change slide
-    $(document).keydown(function(key){
+    $(document).keydown(function(key, currentEl, nextEl, lastEl){
         //find every time when you press button
-        var currentEl = $(v + ' nav ul').find('.' + a1);;
+        currentEl = $(v + ' nav ul').find('.' + a1);;
         
         //key arrow up
         if(key.keyCode == 38){       
-            var nextEl = currentEl.parent().prev().find('a');      
-            var lastEl = currentEl.parent().parent().find('li').last().find('a');
+            nextEl = currentEl.parent().prev().find('a');      
+            lastEl = currentEl.parent().parent().find('li').last().find('a');
 
             if(nextEl.length == 0){
                nextEl=lastEl;
@@ -57,15 +57,15 @@ function vSlider(v){
         }
         //key arrow down
         if(key.keyCode == 40){
-            var nextEl = currentEl.parent().next().find('a');      
-            var firstEl = currentEl.parent().parent().find('li').first().find('a');
+            nextEl = currentEl.parent().next().find('a');      
+            firstEl = currentEl.parent().parent().find('li').first().find('a');
 
             if(nextEl.length == 0){
                nextEl=firstEl;
             }        
             changeClassNavArticle(currentEl, nextEl);
         }
-    })
+    });
 }
 
 $(document).ready(function(){     

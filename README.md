@@ -1,5 +1,7 @@
 # vSlider
 
 vSlider
-- Change slide via menu
-- Change slide via Up/Down arrow
+- change slide via menu
+- change slide via Up/Down arrow
+- responsive web design
+- all animation in CSS3
